@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Dashboard - XPTO</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="./estilos/estilos.css"/>
+        <script src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript" src="./engine/funcoes.js"></script>
+        <script type="text/javascript" src="./engine/jquery-3.4.1.min.js"></script>
+       
+        <script type="text/javascript">
+        <!--
+            $().ready(function(){
+                drawGauge();
+                drawLine();
+                drawHistogram();
+                drawPie();
+            
+            });
+        //-->
+        </script>
+    </head>
+    <body>
+        <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ac&ref=tf_til&ad_type=product_link&tracking_id=rdcom03-20&marketplace=amazon&region=BR&placement=B07Z9KDVGR&asins=B07Z9KDVGR&linkId=2f053325e486923c4682992ed87a1df4&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066C0&bg_color=FFFFFF">
+            </iframe>
+        <div id="dashboard">    
+            <h1>Dashboard - XPTO</h1>
+            <div id="primeiraLinha" class="linha">
+                <div id="graficoGauge" class="card esquerda"></div>
+                <div id="graficoLinha" class="card direita"></div>
+                <div class="clear"></div>
+            </div>
+            <div id="segundaLinha" class="linha">    
+                <div id="graficoHistograma" class="card esquerda"></div>
+                <div id="graficoPizza" class="card direita"></div>
+                <div class="clear"></div>
+            </div>        
+        </div>
+    </body>
+</html>
